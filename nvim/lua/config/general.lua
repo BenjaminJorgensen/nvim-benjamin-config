@@ -73,7 +73,7 @@ vim.opt.listchars = { tab = '» ', trail = '·', lead = '·'}
 vim.o.spell = false
 
 --==================================================
--- Spelling
+-- Undoing
 --==================================================
 vim.opt.undofile = true
 
