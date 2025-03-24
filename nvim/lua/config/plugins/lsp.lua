@@ -19,12 +19,14 @@ local blink_opts = {
         ['<Down>'] = { 'select_next', 'fallback'},
         ['<Tab>'] = { 'select_and_accept', 'fallback' },
 
-        cmdline = {
+    },
+    cmdline = {
+        keymap = {
             preset = 'default',
             ['<C-k>'] = { 'select_prev', 'fallback'},
             ['<C-j>'] = { 'select_next', 'fallback'},
             ['<Tab>'] = { 'show', 'select_next', 'fallback'},
-        }
+        },
     },
 
     -- Don't show map when in cmd

@@ -1,0 +1,24 @@
+
+(defcfg
+  process-unmapped-keys yes
+)
+(defsrc 
+caps 
+esc
+tab h j k l
+lctrl
+ArrowRight
+ArrowLeft
+ArrowUp
+ArrowDown
+)
+
+(defalias 
+    thing (tap-hold-press 200 200 esc lctrl)
+    arrowmap (tap-hold-press 200 200 tab (layer-while-held arrows))
+)
+
+(deflayer base   @thing Backquote @arrowmap h j k l f7 right left up down )
+(deflayer arrows @thing f7 f24 left down up right f7 f24 f24 f24 f24)
+
+
